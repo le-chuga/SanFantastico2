@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styles.CSS">
+    <script src="playlist.js" defer></script>
+    <title>Playlists</title>
+</head>
+<body class="fondo">
+    <a href="misPlaylists.html" class="home">⬅</a>
+    <div class="barrabuscar">
+        <input type="text" id="barrabusqueda" placeholder="🔍">
+        <ul id="listacanciones"></ul>
+    </div>
+
+    <div class="body2">
+        <div class="FNDxulo">
+            
+            <div class="Titulo">Carolina Durante <span class="favorita"></span></div>
+            
+
+
+            <img id="img1" src="IMG/Misil.jpg">
+            <div class="votation">
+                <button class="botonran" onclick="Random()">🎲</button>
+            </div>
+
+
+            <div class="audios">
+                <button class="botonau" onclick="Previous()">⏮</button>
+                <button class="botonau" onclick="Play()">▶</button>
+                <button class="botonau" onclick="Pause()">⏸</button>
+                <button class="botonau" onclick="Next()">⏭</button>
+            </div>
+
+
+            <div class="barraaudio">
+                <button class="velbot" onclick="VelocidadX1(2)">X1</button>
+                <span id="currentTime">0:00</span>
+                <input type="range" id="barratiempo" value="0" step="1">
+                <span id="duration">0:00</span>
+                <button class="velbot" onclick="VelocidadX2(2)">X2</button>
+            </div>
+
+            
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
